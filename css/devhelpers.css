@@ -1,0 +1,13 @@
+.viewport {
+	background-color: rgba(194, 240, 177, 0.75);
+	color: #000;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1em;
+	left: 0;
+	text-align: center;
+	top: 0;
+	padding: 3px 5px 0 5px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
