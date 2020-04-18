@@ -1,2 +1,28 @@
 @media (min-width: 700px) {
 }
+
+$green: #81d064;
+body {
+	margin: 0;
+}
+
+.atomic {
+	header {
+		background-color: $green;
+		position: fixed;
+		width: 100%;
+		ul {
+			li {
+				display: inline-block;
+				ul {
+					display: inline-block;
+					margin: 0;
+					padding: 0;
+					li {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

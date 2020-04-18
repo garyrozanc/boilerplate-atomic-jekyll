@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-episode
 title: Episode Page
 template: true
 categories: [episode]

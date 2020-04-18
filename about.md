@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About Page
-template: true
 permalink: about.html
 ---
 
