@@ -1,21 +1,45 @@
 @media (min-width: 700px) {
 }
 
+$black: #262626;
 $green: #81d064;
+
 body {
 	margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+code {
+	font-family: 'Source Code Pro', monospace;
+}
+
 .atomic {
 	header {
+		a {
+			color: $black;
+		}
 		background-color: $green;
+		padding: .75em;
 		position: fixed;
-		width: 100%;
+		text-transform: uppercase;
+		top: 0;
+		width: calc(100% - 1.5em);
+		z-index: 100;
 		ul {
+			float: left;
+			margin: 0;
+			padding: 0;
+			top: 50%;
 			li {
 				display: inline-block;
 				ul {
 					display: inline-block;
+					float: none;
 					margin: 0;
 					padding: 0;
 					li {
@@ -23,6 +47,10 @@ body {
 					}
 				}
 			}
+		}
+		.viewport-size {
+			float: right;
+			font-family: 'Source Code Pro', monospace;
 		}
 	}
 }
