@@ -12,6 +12,7 @@ body {
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 4em 2em 2em 2em;
 }
 
 code {
@@ -24,6 +25,7 @@ code {
 			color: $black;
 		}
 		background-color: $green;
+		left: 0;
 		padding: .75em;
 		position: fixed;
 		text-transform: uppercase;
@@ -37,13 +39,14 @@ code {
 			top: 50%;
 			li {
 				display: inline-block;
+				margin-right: .5em;
 				ul {
 					display: inline-block;
 					float: none;
-					margin: 0;
+					margin: 0 0 0 .5em;
 					padding: 0;
 					li {
-						margin-left: 0;
+						margin: 0 .5em 0 0;
 					}
 				}
 			}

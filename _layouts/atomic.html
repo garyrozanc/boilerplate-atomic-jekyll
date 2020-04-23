@@ -8,11 +8,12 @@
 		<header>
 			<nav>
 				<ul>
-					<li><a href="atoms.html">Atoms</a></li>
+					<li><a href="#atoms">Atoms</a></li>
 					<li><a href="molecules.html">Molecules</a></li>
 					<li><a href="organisms.html">Organisms</a></li>
-					<li>Templates:
+					<li>Templates
 						<ul>
+							<li>&rsaquo;</li>
 							{% for my_page in site.pages %}
 								{% if my_page.template == true %}
 								<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
@@ -25,11 +26,17 @@
 			<div class="viewport-size"><span id="w"></span><span id="h"></span></div>
 		</header>
 		
+		<section id="atoms">
+			<h2>Atoms</h2>
+		</section>
+		
+		<!--
 		<div class="page-content">
 			<div class="wrapper">
 				{{ content }}
 			</div>
 		</div>
+		-->
 		
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
