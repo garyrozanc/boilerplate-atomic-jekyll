@@ -1,0 +1,27 @@
+$black: #262626;
+$white: #f9f9f9;
+$blue: #6bc7f2;
+$blue-dark: #57a9cf;
+$green: #81d064;
+$grey: #b4b4b4;
+$yellow: #f4d506;
+$red: #ff8888;
+
+$graident-begin: #67a3ea;
+$graident-end: #705ac4;
+
+$focus: #dbe4c6;
+$lightmode: #fdfdfd;
+$darkmode: #404040;
+
+@keyframes announcement { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+
+@keyframes stream { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

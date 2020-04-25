@@ -1,56 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  margin: 4em 2em 2em 2em;
-}
+  margin: 4em 2em 2em 2em; }
 
 code {
-  font-family: 'Source Code Pro', monospace;
-}
+  font-family: 'Source Code Pro', monospace; }
 
 .atomic header {
-  background-color: #81d064;
+  background-color: #262626;
+  color: #fff;
   left: 0;
   padding: .75em;
   position: fixed;
   text-transform: uppercase;
   top: 0;
   width: calc(100% - 1.5em);
-  z-index: 100;
-}
+  z-index: 100; }
+  .atomic header a {
+    color: #fff; }
+  .atomic header ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    top: 50%; }
+    .atomic header ul li {
+      display: inline-block;
+      margin-right: .5em; }
+      .atomic header ul li ul {
+        display: inline-block;
+        float: none;
+        margin: 0 0 0 .5em;
+        padding: 0; }
+        .atomic header ul li ul li {
+          margin: 0 .5em 0 0; }
+  .atomic header .viewport-size {
+    float: right;
+    font-family: 'Source Code Pro', monospace; }
 
-.atomic header a {
-  color: #262626;
-}
-
-.atomic header ul {
-  float: left;
-  margin: 0;
-  padding: 0;
-  top: 50%;
-}
-
-.atomic header ul li {
-  display: inline-block;
-  margin-right: .5em;
-}
-
-.atomic header ul li ul {
-  display: inline-block;
-  float: none;
-  margin: 0 0 0 .5em;
-  padding: 0;
-}
-
-.atomic header ul li ul li {
-  margin: 0 .5em 0 0;
-}
-
-.atomic header .viewport-size {
-  float: right;
-  font-family: 'Source Code Pro', monospace;
-}
+#atoms .color {
+  list-style-type: none;
+  margin: -.5em 0 0 -.5em;
+  padding: 0; }
+  #atoms .color li {
+    display: inline-block;
+    border: 1px solid #262626;
+    padding: 1em;
+    margin: .5em;
+    max-width: 50%;
+    width: calc(10% - 1em); }
+    #atoms .color li .name, #atoms .color li .hex {
+      display: block; }
+    #atoms .color li .bkg {
+      margin-top: .35em;
+      height: 4em;
+      width: 100%; }
