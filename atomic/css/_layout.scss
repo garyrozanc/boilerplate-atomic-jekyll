@@ -85,16 +85,19 @@ code {
 			margin: .5em;
 			max-width: 50%;
 			width: calc(10% - 1em);
+			.name, .hex {
+				display: block;
+			}
 			.name {
 				font-weight: 600;
 				margin-top: .35em;
 			}
-			.name, .hex {
-				display: block;
+			.hex {
+				font-family: 'Source Code Pro', monospace;
 			}
 			.bkg {
 				margin-top: .35em;
-				height: 4em;
+				height: 5em;
 				width: 100%;
 			}
 		}
@@ -110,6 +113,14 @@ code {
 		}
 		.intro {
 			@include font-intro-italic;
+		}
+	}
+	.headlines-with-copy {
+		list-style-type: none;
+		padding: 0;
+		@include font-body;
+		.headline-tag {
+			font-family: 'Source Code Pro', monospace;
 		}
 	}
 }

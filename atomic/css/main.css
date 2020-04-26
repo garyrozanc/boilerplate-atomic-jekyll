@@ -16,6 +16,11 @@
   100% {
     background-position: 0% 50%; } }
 
+h1, h2, h3, h4, h5 {
+  font-family: vista-slab, serif;
+  font-weight: 700;
+  font-style: italic; }
+
 body {
   margin: 0; }
 
@@ -80,14 +85,16 @@ code {
     margin: .5em;
     max-width: 50%;
     width: calc(10% - 1em); }
+    #atoms .color li .name, #atoms .color li .hex {
+      display: block; }
     #atoms .color li .name {
       font-weight: 600;
       margin-top: .35em; }
-    #atoms .color li .name, #atoms .color li .hex {
-      display: block; }
+    #atoms .color li .hex {
+      font-family: 'Source Code Pro', monospace; }
     #atoms .color li .bkg {
       margin-top: .35em;
-      height: 4em;
+      height: 5em;
       width: 100%; }
 
 #atoms .fonts {
@@ -106,3 +113,12 @@ code {
     font-family: vista-slab, serif;
     font-weight: 400;
     font-style: italic; }
+
+#atoms .headlines-with-copy {
+  list-style-type: none;
+  padding: 0;
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+  #atoms .headlines-with-copy .headline-tag {
+    font-family: 'Source Code Pro', monospace; }
