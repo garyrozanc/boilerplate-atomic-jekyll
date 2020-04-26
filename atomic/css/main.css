@@ -16,7 +16,7 @@
   100% {
     background-position: 0% 50%; } }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: vista-slab, serif;
   font-weight: 700;
   font-style: italic; }
@@ -27,6 +27,8 @@ body {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 4em 2em 2em 2em; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Source Sans Pro', sans-serif; }
 
 code {
   font-family: 'Source Code Pro', monospace; }
@@ -122,3 +124,7 @@ code {
   font-style: normal; }
   #atoms .headlines-with-copy .headline-tag {
     font-family: 'Source Code Pro', monospace; }
+  #atoms .headlines-with-copy h1, #atoms .headlines-with-copy h2, #atoms .headlines-with-copy h3, #atoms .headlines-with-copy h4, #atoms .headlines-with-copy h5, #atoms .headlines-with-copy h6 {
+    font-family: vista-slab, serif;
+    font-weight: 700;
+    font-style: italic; }

@@ -1,0 +1,12 @@
+Definition list
+
+A definition list is used for displaying terms and each followed by a definition list. If you quickly need a definition list, you can use the definition list generator tool that creates the HTML code for the terms and definitions you submit. A definition list starts with the <dl> tag. Each term in the definition list is listed with the <dt> tag. Finally, the definition for the term is listed with the <dd> tag. Let's work with an example that will produce the following output:
+
+Network
+    A number of computers or other devices connected to share information and resources.
+Multitasking
+    The ability of CPU to run two or more programs independently at the same time.
+File Management
+    Organization and tracking of files.
+
+To create this list, we will first use the <dl> tag to start the definition list. Next, to list the term we will use the <dt> tag. The first term we want to define is "Network" thus it will contained in the <dt> tag as <dt>Network</dt>. To list the definition for the term, we will use the <dd> tag, as shown below:
