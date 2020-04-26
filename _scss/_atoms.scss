@@ -14,6 +14,29 @@ $focus: #dbe4c6;
 $lightmode: #fdfdfd;
 $darkmode: #404040;
 
+@mixin load-font {
+	@import url("https://use.typekit.net/ueu3gzi.css");
+}
+
+@mixin font-body {
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+@mixin font-intro-italic {
+	font-family: vista-slab, serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@mixin font-headline {
+	font-family: vista-slab, serif;
+	font-weight: 700;
+	font-style: italic;	
+}
+
+
 @keyframes announcement { 
     0%{background-position:10% 0%}
     50%{background-position:91% 100%}

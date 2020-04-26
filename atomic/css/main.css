@@ -1,4 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300;600&display=swap");
+@import url("https://use.typekit.net/ueu3gzi.css");
+@keyframes announcement {
+  0% {
+    background-position: 10% 0%; }
+  50% {
+    background-position: 91% 100%; }
+  100% {
+    background-position: 10% 0%; } }
+
+@keyframes stream {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 body {
   margin: 0; }
 
@@ -40,20 +57,52 @@ code {
     float: right;
     font-family: 'Source Code Pro', monospace; }
 
+#atoms h3 {
+  margin-bottom: 0; }
+
+#atoms hr {
+  border: 0;
+  height: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
+
+#atoms ul {
+  margin: 0 0 3em 0; }
+
 #atoms .color {
   list-style-type: none;
-  margin: -.5em 0 0 -.5em;
+  margin-left: -.5em;
   padding: 0; }
   #atoms .color li {
     display: inline-block;
     border: 1px solid #262626;
-    padding: 1em;
+    padding: .65em .75em .75em .75em;
     margin: .5em;
     max-width: 50%;
     width: calc(10% - 1em); }
+    #atoms .color li .name {
+      font-weight: 600;
+      margin-top: .35em; }
     #atoms .color li .name, #atoms .color li .hex {
       display: block; }
     #atoms .color li .bkg {
       margin-top: .35em;
       height: 4em;
       width: 100%; }
+
+#atoms .fonts {
+  color: #262626;
+  font-size: 1.25em;
+  list-style-type: none;
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0; }
+  #atoms .fonts .headline {
+    font-family: vista-slab, serif;
+    font-weight: 700;
+    font-style: italic; }
+  #atoms .fonts .intro {
+    font-family: vista-slab, serif;
+    font-weight: 400;
+    font-style: italic; }
