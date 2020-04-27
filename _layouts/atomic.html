@@ -68,7 +68,7 @@
 				<li><del>This text is deleted,</del> and <ins>this text is inserted.</ins></li>
 				<li><s>This text has a strikethrough</s></li>
 				<li>This is an example of Superscript<sup>®</sup>.</li>
-				<li>Subscript for things like H<sub>2</sub>0.</li>
+				<li>Subscript for things like H<sub>2</sub>O.</li>
 				<li><small>This small text is small for for fine print, etc.</small></li>
 				<li><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></li>
 				<li><cite>This is a citation.</cite></li>
@@ -122,7 +122,7 @@
 			<h3>Lists</h3>
 			<hr>
 			<ul class="lists">
-				<li>
+				<li class="lists-li">
 					<h4>Unordered List</h4>
 					<ul class="list-ul">
 						<li>An unordered list is used when list items do not have any particular order. An unordered list is created with the <code&gt;</code>&lt;ul&gt;</code> tag.</li>
@@ -138,7 +138,7 @@
 						<li>Just as you can change the numbering style for an ordered list, you can change the default bullet style for an unordered list.</li>
 					</ul>
 				</li>
-				<li>
+				<li class="lists-li">
 					<h4>Ordered List</h4>
 					<ol class="list-ol">
 						<li>An ordered list is a numbered list. An ordered list can be used whenever a list requires sequence.</li>
@@ -152,16 +152,20 @@
 						<li><code>&lt;ol type="a"&gt;</code> lowercase letters (a) - to create list using lowercase alphabet letters</li>
 						<li><code>&lt;ol type="I"&gt;</code> uppercase Roman numerals (I) - to create list using uppercase Roman Numerals</li>
 						<li><code>&lt;ol type="i"&gt;</code> lowercase Roman numerals (i) - to create list using lowercase Roman Numerals</li>
-					</ul> 
+					</ol> 
 				</li>
-				<li>
+				<li class="lists-li">
+					<h4>Ordered List</h4>
 					<dl class="list-dl">
-						<dt></dt>
-						<dd></dd>
-						<dt></dt>
-						<dd></dd>
-						<dt></dt>
-						<dd></dd>
+						<dt>Definition list (the Term)</dt>
+						<dd>A definition list is used for displaying terms and each followed by a definition list.</dd>
+						<dd>In HTML 4, the <code>&lt;dl&gt;</code> tag defined a “definition list.” But in HTML5, this has been changed to “description list.” This change has little meaning, other than to indicate that the terms and descriptions don't have to be definitions.</dd>
+						<dt><code>&lt;dl&gt;</code></dt>
+						<dd>A definition list starts with the <code>&lt;dl&gt;</code> tag.</dd>
+						<dt><code>&lt;dt&gt;</code></dt>
+						<dd>Each term in the definition list is listed with the <code>&lt;dt&gt;</code> tag.</dd>
+						<dt><code>&lt;dd&gt;</code></dt>
+						<dd>Finally, the definition for the term is listed with the <code>&lt;dd&gt;</code> tag.</dd>
 					</dl> 
 				</li>
 			</ul>
@@ -172,7 +176,6 @@
 				<li></li>
 			</ul>
 		</section>
-
 		
 		<!--
 		<div class="page-content">
