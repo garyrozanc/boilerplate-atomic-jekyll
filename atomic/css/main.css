@@ -66,111 +66,119 @@ code {
     float: right;
     font-family: 'Source Code Pro', monospace; }
 
-#atoms .atoms-heading {
+.atomic .atoms-heading {
   font-size: 2.125em; }
 
-#atoms .atoms-sub-heading {
-  font-size: 1.5em;
-  margin-bottom: .25em; }
+.atomic section {
+  margin-bottom: 4em; }
+  .atomic section .atoms-sub-heading {
+    font-size: 1.5em;
+    margin-bottom: .25em; }
 
-#atoms hr {
+.atomic hr {
   border: 0;
   height: 0;
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   margin-top: 0; }
 
-#atoms .color {
+.atomic .color,
+.atomic .fonts,
+.atomic .in-line,
+.atomic .headlines-with-copy,
+.atomic .lists,
+.atomic .icons {
   list-style-type: none;
-  margin-left: -.5em;
   padding: 0; }
-  #atoms .color li {
+
+.atomic .color {
+  margin-left: -.5em; }
+  .atomic .color li {
     display: inline-block;
     border: 1px solid #262626;
     padding: .65em .75em .75em .75em;
     margin: .5em;
     max-width: 50%;
     width: calc(10% - 1em); }
-    #atoms .color li .name, #atoms .color li .hex {
+    .atomic .color li .name, .atomic .color li .hex {
       display: block; }
-    #atoms .color li .name {
+    .atomic .color li .name {
       font-weight: 600;
       margin-top: .35em; }
-    #atoms .color li .hex {
+    .atomic .color li .hex {
       font-family: 'Source Code Pro', monospace; }
-    #atoms .color li .bkg {
+    .atomic .color li .bkg {
       margin-top: .35em;
       height: 5em;
       width: 100%; }
 
-#atoms .fonts {
+.atomic .fonts {
   color: #262626;
   font-size: 1.25em;
-  list-style-type: none;
   font-family: freight-sans-pro, sans-serif;
   font-weight: 300;
   font-style: normal;
-  padding: 0; }
-  #atoms .fonts .headline {
+  line-height: 1.5; }
+  .atomic .fonts .headline {
     font-family: vista-slab, serif;
     font-weight: 700;
     font-style: italic; }
-  #atoms .fonts .intro {
+  .atomic .fonts .intro {
     font-family: vista-slab, serif;
     font-weight: 400;
     font-style: italic; }
 
-#atoms .in-line li {
+.atomic .in-line li {
   font-family: freight-sans-pro, sans-serif;
   font-weight: 300;
   font-style: normal; }
 
-#atoms .headlines-with-copy {
+.atomic .headlines-with-copy {
   list-style-type: none;
   padding: 0 0 0 4em;
   font-family: freight-sans-pro, sans-serif;
   font-weight: 300;
   font-style: normal; }
-  #atoms .headlines-with-copy .headline-tag {
+  .atomic .headlines-with-copy .headline-tag {
     font-family: 'Source Code Pro', monospace;
     font-variant-numeric: lining-nums; }
-  #atoms .headlines-with-copy h1, #atoms .headlines-with-copy h2, #atoms .headlines-with-copy h3, #atoms .headlines-with-copy h4, #atoms .headlines-with-copy h5, #atoms .headlines-with-copy h6 {
+  .atomic .headlines-with-copy h1, .atomic .headlines-with-copy h2, .atomic .headlines-with-copy h3, .atomic .headlines-with-copy h4, .atomic .headlines-with-copy h5, .atomic .headlines-with-copy h6 {
     font-family: vista-slab, serif;
     font-weight: 700;
     font-style: italic; }
-    #atoms .headlines-with-copy h1:before, #atoms .headlines-with-copy h2:before, #atoms .headlines-with-copy h3:before, #atoms .headlines-with-copy h4:before, #atoms .headlines-with-copy h5:before, #atoms .headlines-with-copy h6:before {
+    .atomic .headlines-with-copy h1:before, .atomic .headlines-with-copy h2:before, .atomic .headlines-with-copy h3:before, .atomic .headlines-with-copy h4:before, .atomic .headlines-with-copy h5:before, .atomic .headlines-with-copy h6:before {
       font-family: 'Source Code Pro', monospace;
       font-style: normal;
       font-size: 18px;
       margin: -.125em 1.55em 0 -4em; }
-  #atoms .headlines-with-copy h1:before {
+  .atomic .headlines-with-copy h1:before {
     content: "\003c h1\003e"; }
-  #atoms .headlines-with-copy h2:before {
+  .atomic .headlines-with-copy h2:before {
     content: "\003c h2\003e"; }
-  #atoms .headlines-with-copy h3:before {
+  .atomic .headlines-with-copy h3:before {
     content: "\003c h3\003e"; }
-  #atoms .headlines-with-copy h4:before {
+  .atomic .headlines-with-copy h4:before {
     content: "\003c h4\003e"; }
-  #atoms .headlines-with-copy h5:before {
+  .atomic .headlines-with-copy h5:before {
     content: "\003c h5\003e"; }
-  #atoms .headlines-with-copy h6:before {
+  .atomic .headlines-with-copy h6:before {
     content: "\003c h6\003e"; }
 
-#atoms .lists {
+.atomic .lists {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-  #atoms .lists h3 {
+  .atomic .lists h3 {
     margin-bottom: 0; }
 
-#atoms .icons {
+.atomic .icons {
   list-style-type: none;
   padding: 0; }
-  #atoms .icons li {
+  .atomic .icons li {
     border: 1px solid #262626;
     display: inline-block;
     margin-right: .5em;
     padding: .5em;
     width: 5%; }
-    #atoms .icons li svg {
+    .atomic .icons li svg {
       fill: #262626; }

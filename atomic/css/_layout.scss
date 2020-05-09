@@ -64,15 +64,15 @@ code {
 			font-family: 'Source Code Pro', monospace;
 		}
 	}
-}
-
-#atoms {
 	.atoms-heading {
 		font-size: 2.125em;
 	}
-	.atoms-sub-heading {
-		font-size: 1.5em;
-		margin-bottom: .25em;
+	section {
+		margin-bottom: 4em;
+		.atoms-sub-heading {
+			font-size: 1.5em;
+			margin-bottom: .25em;
+		}
 	}
 	hr {
 		border: 0;
@@ -81,10 +81,18 @@ code {
 		border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 		margin-top: 0;
 	}
-	.color {
+	.color,
+	.fonts,
+	.in-line,
+	.headlines-with-copy,
+	.lists,
+	.icons {
 		list-style-type: none;
-		margin-left: -.5em;
 		padding: 0;
+	}
+	
+	.color {
+		margin-left: -.5em;
 		li {
 			display: inline-block;
 			border: 1px solid $black;
@@ -109,12 +117,12 @@ code {
 			}
 		}
 	}
+	
 	.fonts {
 		color: $black;
 		font-size: 1.25em;
-		list-style-type: none;
 		@include font-body;
-		padding: 0;
+		line-height: 1.5;
 		.headline {
 			@include font-headline;
 		}
@@ -122,11 +130,13 @@ code {
 			@include font-intro-italic;
 		}
 	}
+	
 	.in-line {
 		li {
 			@include font-body;
 		}
 	}
+	
 	.headlines-with-copy {
 		list-style-type: none;
 		padding: 0 0 0 4em;
