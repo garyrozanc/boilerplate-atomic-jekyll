@@ -126,7 +126,7 @@ code {
 
 #atoms .headlines-with-copy {
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 0 4em;
   font-family: freight-sans-pro, sans-serif;
   font-weight: 300;
   font-style: normal; }
@@ -137,6 +137,23 @@ code {
     font-family: vista-slab, serif;
     font-weight: 700;
     font-style: italic; }
+    #atoms .headlines-with-copy h1:before, #atoms .headlines-with-copy h2:before, #atoms .headlines-with-copy h3:before, #atoms .headlines-with-copy h4:before, #atoms .headlines-with-copy h5:before, #atoms .headlines-with-copy h6:before {
+      font-family: 'Source Code Pro', monospace;
+      font-style: normal;
+      font-size: 18px;
+      margin: -.125em 1.55em 0 -4em; }
+  #atoms .headlines-with-copy h1:before {
+    content: "\003c h1\003e"; }
+  #atoms .headlines-with-copy h2:before {
+    content: "\003c h2\003e"; }
+  #atoms .headlines-with-copy h3:before {
+    content: "\003c h3\003e"; }
+  #atoms .headlines-with-copy h4:before {
+    content: "\003c h4\003e"; }
+  #atoms .headlines-with-copy h5:before {
+    content: "\003c h5\003e"; }
+  #atoms .headlines-with-copy h6:before {
+    content: "\003c h6\003e"; }
 
 #atoms .lists {
   list-style-type: none;

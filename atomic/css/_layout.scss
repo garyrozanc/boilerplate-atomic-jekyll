@@ -128,7 +128,7 @@ code {
 	}
 	.headlines-with-copy {
 		list-style-type: none;
-		padding: 0;
+		padding: 0 0 0 4em;
 		@include font-body;
 		.headline-tag {
 			font-family: 'Source Code Pro', monospace;
@@ -137,6 +137,30 @@ code {
 		}
 		h1, h2, h3, h4, h5, h6 {
 			@include font-headline;
+			&:before {
+				font-family: 'Source Code Pro', monospace;
+				font-style: normal;
+				font-size: 18px;
+				margin: -.125em 1.55em 0 -4em;
+			}
+		}
+		h1:before {
+			content: "\003c h1\003e";
+		}
+		h2:before {
+			content: "\003c h2\003e";
+		}
+		h3:before {
+			content: "\003c h3\003e";
+		}
+		h4:before {
+			content: "\003c h4\003e";
+		}
+		h5:before {
+			content: "\003c h5\003e";
+		}
+		h6:before {
+			content: "\003c h6\003e";
 		}
 	}
 	.lists {

@@ -16,7 +16,7 @@
 							<li>&rsaquo;</li>
 							{% for my_page in site.pages %}
 								{% if my_page.template == true %}
-								<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+								<li><a href="/templates/{{ my_page.name | replace:'.md','.html' }}">{{ my_page.title }}</a></li>
 								{% endif %}
 							{% endfor %}
 						</ul>
@@ -82,37 +82,31 @@
 			<hr>
 			<ul class="headlines-with-copy">
 				<li>
-					<span class="headline-tag">h1</span>
 					<h1>Lessons Learned Hosting Revision Path from Diversity to Design with Maurice Cherry</h1>
 					<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
 					<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
 				</li>
 				<li>
-					<span class="copy-tag">h2</span>
 					<h2>Episode Links</h2>
 					<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
 					<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
 				</li>
 				<li>
-					<span class="copy-tag">h3</span>
 					<h3>Episode Links</h3>
 					<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
 					<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
 				</li>
 				<li>
-					<span class="copy-tag">h4</span>
 					<h4>Episode Links</h4>
 					<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
 					<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
 				</li>
 				<li>
-					<span class="copy-tag">h5</span>
 					<h5>Episode Links</h5>
 					<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
 					<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
 				</li>
 				<li>
-					<span class="copy-tag">h6</span>
 					<h6>Episode Links</h6>
 					<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
 					<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
@@ -155,7 +149,7 @@
 					</ol> 
 				</li>
 				<li class="lists-li">
-					<h4>Ordered List</h4>
+					<h4>Definition List</h4>
 					<dl class="list-dl">
 						<dt>Definition list (the Term)</dt>
 						<dd>A definition list is used for displaying terms and each followed by a definition list.</dd>
