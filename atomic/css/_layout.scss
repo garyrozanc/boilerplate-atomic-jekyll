@@ -1,17 +1,9 @@
-@media (min-width: 700px) {
-}
-
-$black: #262626;
-$green: #81d064;
-
 body {
 	font-size: 20px;
 	margin: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300;600&display=swap');
-
-@include load-font;
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -86,7 +78,8 @@ code {
 	.in-line,
 	.headlines-with-copy,
 	.lists,
-	.icons {
+	.icons,
+	.form-inputs {
 		list-style-type: none;
 		padding: 0;
 	}
@@ -123,10 +116,16 @@ code {
 		font-size: 1.25em;
 		@include font-body;
 		line-height: 1.5;
-		.headline {
+		.fonts-italic {
+			@include font-body-italic;
+		}
+		.fonts-bold {
+			@include font-body-bold;
+		}
+		.fonts-headline {
 			@include font-headline;
 		}
-		.intro {
+		.fonts-intro {
 			@include font-intro-italic;
 		}
 	}

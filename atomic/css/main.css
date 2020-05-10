@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300;600&display=swap");
 @import url("https://use.typekit.net/ueu3gzi.css");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300;600&display=swap");
 @keyframes announcement {
   0% {
     background-position: 10% 0%; }
@@ -87,7 +87,8 @@ code {
 .atomic .in-line,
 .atomic .headlines-with-copy,
 .atomic .lists,
-.atomic .icons {
+.atomic .icons,
+.atomic .form-inputs {
   list-style-type: none;
   padding: 0; }
 
@@ -119,11 +120,15 @@ code {
   font-weight: 300;
   font-style: normal;
   line-height: 1.5; }
-  .atomic .fonts .headline {
+  .atomic .fonts .fonts-italic {
+    font-style: italic; }
+  .atomic .fonts .fonts-bold {
+    font-weight: 500; }
+  .atomic .fonts .fonts-headline {
     font-family: vista-slab, serif;
     font-weight: 700;
     font-style: italic; }
-  .atomic .fonts .intro {
+  .atomic .fonts .fonts-intro {
     font-family: vista-slab, serif;
     font-weight: 400;
     font-style: italic; }

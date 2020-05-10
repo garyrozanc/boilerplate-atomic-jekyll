@@ -14,14 +14,20 @@ $focus: #dbe4c6;
 $lightmode: #fdfdfd;
 $darkmode: #404040;
 
-@mixin load-font {
-	@import url("https://use.typekit.net/ueu3gzi.css");
-}
+@import url("https://use.typekit.net/ueu3gzi.css");
 
 @mixin font-body {
 	font-family: freight-sans-pro, sans-serif;
 	font-weight: 300;
 	font-style: normal;
+}
+
+@mixin font-body-italic {
+	font-style: italic;
+}
+
+@mixin font-body-bold {
+	font-weight: 500;
 }
 
 @mixin font-intro-italic {
