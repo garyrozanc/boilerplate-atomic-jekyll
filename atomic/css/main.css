@@ -176,6 +176,9 @@ code {
   .atomic .lists h3 {
     margin-bottom: 0; }
 
+.atomic .form-inputs li {
+  margin-bottom: 1em; }
+
 .atomic .icons {
   list-style-type: none;
   padding: 0; }
