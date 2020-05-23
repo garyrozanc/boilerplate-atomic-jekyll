@@ -2,22 +2,230 @@
 layout: atomic
 ---
 
-<div class="home">
+<h1 class="atoms-heading">Atoms</h1>
 
-  <h1 class="page-heading">Posts</h1>
+<section class="atoms-color">
+	<h2 class="atoms-sub-heading">Colors</h2>
+	<hr>
+	<ul class="color">
+		<li><div class="bkg" style="background-color:#262626;"></div><span class="name">Black</span><span class="hex">#262626</span></li>
+		<li><div class="bkg" style="background-color:#f9f9f9;"></div><span class="name">White</span><span class="hex">#f9f9f9</span></li>
+		<li><div class="bkg" style="background-color:#6bc7f2;"></div><span class="name">Blue</span><span class="hex">#6bc7f2</span></li>
+		<li><div class="bkg" style="background-color:#57a9cf;"></div><span class="name">Dark Blue</span><span class="hex">#57a9cf</span></li>
+		<li><div class="bkg" style="background-color:#81d064;"></div><span class="name">Green</span><span class="hex">#81d064</span></li>
+		<li><div class="bkg" style="background-color:#b4b4b4;"></div><span class="name">Grey</span><span class="hex">#b4b4b4</span></li>
+		<li><div class="bkg" style="background-color:#f4d506;"></div><span class="name">Yellow</span><span class="hex">#f4d506</span></li>
+		<li><div class="bkg" style="background-color:#ff8888;"></div><span class="name">Red</span><span class="hex">#ff8888</span></li>
+		<li><div class="bkg" style="animation: announcement 4s ease infinite;background: linear-gradient(328deg, #67a3ea, #705ac4);background-size: 400% 400%"></div><span class="name">Animated Gradient</span><span class="hex">#404040</span></li>
+		<li><div class="bkg" style="background-color:#dbe4c6;"></div><span class="name">Focus</span><span class="hex">#dbe4c6</span></li>
+		<li><div class="bkg" style="background-color:#fdfdfd;"></div><span class="name">Lightmode White</span><span class="hex">#fdfdfd</span></li>
+		<li><div class="bkg" style="background-color:#404040;"></div><span class="name">Darkmode Black</span><span class="hex">#404040</span></li>
+	</ul>
+</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section class="atoms-fonts">		
+	<h2 class="atoms-sub-heading">Fonts</h2>
+	<hr>
+	<ul class="fonts">
+		<li>Body Font Regular: Freight Sans Pro</li>
+		<li class="fonts-italic">Body Font Italic: Freight Sans Pro</li>
+		<li class="fonts-bold">Body Font Bold: Freight Sans Pro</li>
+		<li class="fonts-intro">Intro Font: Vista Slab Italic</li>
+		<li class="fonts-headline">Headline Font: Vista Slab Italic</li>
+	</ul>
+</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<section class="atoms-in-line-elements">
+	<h2 class="atoms-sub-heading">In-Line Elements</h2>
+	<hr>
+	<ul class="in-line">
+		<li><a href="#">This is a text link</a></li>
+		<li><strong>Strong is used to indicate strong importance.</strong></li>
+		<li><em>This text has added emphasis.</em></li>
+		<li>The <b>b element</b> is stylistically different text from normal text, without any special importance.</li>
+		<li>The <i>i element</i> is text that is set off from the normal text.</li>
+		<li>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</li>
+		<li><del>This text is deleted,</del> and <ins>this text is inserted.</ins></li>
+		<li><s>This text has a strikethrough</s></li>
+		<li>This is an example of Superscript<sup>®</sup>.</li>
+		<li>Subscript for things like H<sub>2</sub>O.</li>
+		<li><small>This small text is small for for fine print, etc.</small></li>
+		<li><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q></li>
+		<li><cite>This is a citation.</cite></li>
+		<li>The <dfn>dfn element</dfn> indicated a definition.</li>
+		<li>The <mark>mark element</mark> indicates a highlight.</li>
+		<li><code>This is what inline code looks like.</code></li>
+	</ul>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section class="atoms-headline-fonts">
+	<h2 class="atoms-sub-heading">Headlines with Copy</h2>
+	<hr>
+	<ul class="headlines-with-copy">
+		<li>
+			<h1>Lessons Learned Hosting Revision Path from Diversity to Design with Maurice Cherry</h1>
+			<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+			<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
+		</li>
+		<li>
+			<h2>Episode Links</h2>
+			<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+			<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
+		</li>
+		<li>
+			<h3>Episode Links</h3>
+			<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+			<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
+		</li>
+		<li>
+			<h4>Episode Links</h4>
+			<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+			<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
+		</li>
+		<li>
+			<h5>Episode Links</h5>
+			<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+			<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
+		</li>
+		<li>
+			<h6>Episode Links</h6>
+			<p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+			<p>A paragraph typically consists of a unifying main point, thought, or idea accompanied by supporting details. The non-fiction paragraph usually begins with the general and moves towards the more specific so as to advance an argument or point of view. Each paragraph builds on what came before and lays the ground or run the length of multiple pages, and may consist of one or many sentences.</p> 
+		</li>
+	</ul>
+</section>
 
-</div>
+<section class="atoms-lists">
+	<h2 class="atoms-sub-heading">Lists</h2>
+	<hr>
+	<ul class="lists">
+		<li class="lists-li">
+			<h4>Unordered List</h4>
+			<ul class="list-ul">
+				<li>An unordered list is used when list items do not have any particular order. An unordered list is created with the <code&gt;</code>&lt;ul&gt;</code> tag.</li>
+				<li><code&gt;</code>&lt;ul&gt;</code> tag also is a two sided tag and closed with <code&gt;</code>&lt;/ul&gt;</code> tag.</li>
+				<li>Like an ordered-list, an item for unordered list is listed with the <code&gt;</code>&lt;li&gt;</code> tag.</li>
+				<li>
+					<ul>
+						<li>To create a sub list, we will list start with the <code&gt;</code>&lt;ul&gt;</code> tag.</li>
+						<li>Next, we will use the <code&gt;</code>&lt;li&gt;</code> tag to list the first item and <code&gt;</code>&lt;/li&gt;</code> to end the first item.</li>
+						<li>Similarly, we will create the rest of the list items with the <code&gt;</code>&lt;li&gt;</code> and <code&gt;</code>&lt;/li&gt;</code> tag.</li>
+					</ul>
+				</li>
+				<li>Just as you can change the numbering style for an ordered list, you can change the default bullet style for an unordered list.</li>
+			</ul>
+		</li>
+		<li class="lists-li">
+			<h4>Ordered List</h4>
+			<ol class="list-ol">
+				<li>An ordered list is a numbered list. An ordered list can be used whenever a list requires sequence.</li>
+				<li>Let's assume we want to create an ordered list that displays how Tom likes six colors, the most important color is listed first and the next most important color is listed second, etc.</li>
+				<li>The <code>&lt;ol&gt;</code> tag starts an ordered list. The <code>&lt;ol&gt;</code> tag is a two-sided tag, which means that it also requires a closing tag <code>&lt;/ol&gt;</code>.</li>
+				<li>The <code>&lt;/ol&gt;</code> tag instructs the browser that the ordered list has ended. </li>
+				<li>Thus each item that needs to be placed in a list, should be placed inside the <code>&lt;li&gt;</code> and <code>&lt;/li&gt;</code> tag.
+				<li>The <code>&lt;ol&gt;</code> tag includes the type attribute that can be used to change numbering style for an ordered list. This attribute can be set to one of the following choices:</li>
+				<li><code>&lt;ol type="1"&gt;</code> Arabic numbers (1) - to create list using Arabic numbers. This is the default type for an ordered list.</li>
+				<li><code>&lt;ol type="A"&gt;</code> uppercase letters (A) - to create list using uppercase alphabet letters</li>
+				<li><code>&lt;ol type="a"&gt;</code> lowercase letters (a) - to create list using lowercase alphabet letters</li>
+				<li><code>&lt;ol type="I"&gt;</code> uppercase Roman numerals (I) - to create list using uppercase Roman Numerals</li>
+				<li><code>&lt;ol type="i"&gt;</code> lowercase Roman numerals (i) - to create list using lowercase Roman Numerals</li>
+			</ol> 
+		</li>
+		<li class="lists-li">
+			<h4>Definition List</h4>
+			<dl class="list-dl">
+				<dt>Definition list (the Term)</dt>
+				<dd>A definition list is used for displaying terms and each followed by a definition list.</dd>
+				<dd>In HTML 4, the <code>&lt;dl&gt;</code> tag defined a “definition list.” But in HTML5, this has been changed to “description list.” This change has little meaning, other than to indicate that the terms and descriptions don't have to be definitions.</dd>
+				<dt><code>&lt;dl&gt;</code></dt>
+				<dd>A definition list starts with the <code>&lt;dl&gt;</code> tag.</dd>
+				<dt><code>&lt;dt&gt;</code></dt>
+				<dd>Each term in the definition list is listed with the <code>&lt;dt&gt;</code> tag.</dd>
+				<dt><code>&lt;dd&gt;</code></dt>
+				<dd>Finally, the definition for the term is listed with the <code>&lt;dd&gt;</code> tag.</dd>
+			</dl> 
+		</li>
+	</ul>
+</section>
+
+<section class="atoms-form-inputs">
+	<h2 class="atoms-sub-heading">Form Inputs</h2>
+	<hr>
+	<ul class="form-inputs">
+		<li>
+			Input Button<br>
+			<input type="button" name="input-button" id="input-button">
+		</li>
+		<li>
+			Input Checkbox<br>
+			<input type="checkbox" name="input-checkbox" id="input-checkbox">
+		</li>
+		<li>
+			Input Color<br>
+			<input type="color" name="input-color" id="input-color">
+		</li>
+		<li>
+			Input Date<br>
+			<input type="date" name="input-date" id="input-date">
+		</li>
+		<li>
+			Input File<br>
+			<input type="file" name="input-file" id="input-file">
+		</li>
+		<li>
+			Input Number<br>
+			<input type="number" name="input-number" id="input-number">
+		</li>
+		<li>
+			Input Password<br>
+			<input type="password" name="input-password" id="input-password">
+		</li>
+		<li>
+			Input Radio<br>
+			<input type="radio" name="input-radio" id="input-radio">
+		</li>
+		<li>
+			Input Range<br>
+			<input type="range" name="input-range" id="input-range">
+		</li>
+		<li>
+			Input Reset<br>
+			<input type="reset" name="input-reset" id="input-reset">
+		</li>
+		<li>
+			Input Submit<br>
+			<input type="submit" name="input-submit" id="input-submit">
+		</li>
+		<li>
+			Input Text<br>
+			<input type="text" name="input-text" id="input-text">
+		</li>
+		<li>
+			Input Time<br>
+			<input type="time" name="input-time" id="input-time">
+		</li>
+		<li>
+			Select<br>
+			<select name="select" id="select">
+				<option value="Option One">Option One</option>
+				<option value="Option Two">Option Two</option>
+				<option value="Option Three">Option Three</option>
+				<option value="Option Four">Option Four</option>
+			</select>
+		</li>
+		<li>
+			Text Area<br>
+			<textarea name="text-area" id="text-area"></textarea>
+		</li>
+	</ul>
+</section>
+
+<section class="atoms-icons">	
+	<h2 class="atoms-sub-heading">Icons</h2>
+	<hr>
+	<ul class="icons">
+		<li>{% include icon-close.html %}</li>
+		<li>{% include icon-play.html %}</li>
+		<li>{% include icon-sound.html %}</li>
+	</ul>
+</section>

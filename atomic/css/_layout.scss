@@ -56,12 +56,15 @@ code {
 			font-family: 'Source Code Pro', monospace;
 		}
 	}
-	.atoms-heading {
+	.atoms-heading,
+	.molecules-heading,
+	.organisms-heading {
 		font-size: 2.125em;
 	}
 	section {
 		margin-bottom: 4em;
-		.atoms-sub-heading {
+		.atoms-sub-heading,
+		.molecules-sub-heading {
 			font-size: 1.5em;
 			margin-bottom: .25em;
 		}
