@@ -74,7 +74,8 @@ code {
 .atomic section {
   margin-bottom: 4em; }
   .atomic section .atoms-sub-heading,
-  .atomic section .molecules-sub-heading {
+  .atomic section .molecules-sub-heading,
+  .atomic section .organisms-sub-heading {
     font-size: 1.5em;
     margin-bottom: .25em; }
 
